@@ -43,7 +43,7 @@ const fetchCoordinates = function() {
         city = searchInfo.value;
         
     }
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=85bf9bafe7ed879cd54ec771d3a9b0f4')
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=85bf9bafe7ed879cd54ec771d3a9b0f4')
     
         .then((response) => response.json())
         .then((data) => {
