@@ -1,0 +1,35 @@
+*{
+    list-style-type: none;
+    background-color:lavender;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+#search-btn {
+    border-radius: 4px;
+    margin: 5px;
+}
+
+#h1 {
+    text-align: center;
+    display: flex-box;
+    margin: auto;
+    
+}
+
+#results-container {
+    display: flexbox;
+    text-align: center;
+    list-style-type: none;
+    border-style: solid;
+    padding: 2px;
+}
+
+.five-day-card {
+    
+    font-size: smaller;
+    display: inline-block;
+    border: 3px #900C3F;
+    text-align: center;
+}
