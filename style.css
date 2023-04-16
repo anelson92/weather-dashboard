@@ -5,6 +5,10 @@
 
 }
 
+#search-history-btn {
+    border-radius: 4px;
+    margin: 5px;
+}
 
 #search-btn {
     border-radius: 4px;

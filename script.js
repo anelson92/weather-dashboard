@@ -17,8 +17,6 @@ let searchInfo = document.getElementById('search-info');
 let searchButton = document.getElementById('search-btn');
 
 
-let cities = [];
-
 var city;
 var searchCity;
 
@@ -49,8 +47,8 @@ const fetchCoordinates = function() {
     
         .then((response) => response.json())
         .then((data) => {
-           fetchFiveDay(data[0].lat, data[0].lon);
-           displayWeather(data[0].lat, data[0].lon); 
+           fetchFiveDay(lati(data), long(data));
+           displayWeather(lati(data), long(data)); 
         })
         
         .catch((err) => {
@@ -159,8 +157,7 @@ const renderFiveDay = (date, temp, wind, humidity) => {
 
 // new button for cities in local storage
 const cityButton = (name) => {
-    for (var i = 0; i < cities.length; i++) {
-
+    
     let newSearch = document.createElement('button');
         newSearch.textContent = name;
         newSearch.id = 'search-history-btn'
@@ -182,5 +179,5 @@ document.addEventListener('click', (e) => {
        displayWeather(e.target.textContent);
     }
 })
-}
+
 
